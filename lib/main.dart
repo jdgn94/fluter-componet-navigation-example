@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_localizations/flutter_localizations.dart';
 
 import 'src/routes/routes.dart';
 import 'src/pages/error_page.dart';
@@ -10,6 +11,18 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
+      localizationsDelegates: [
+        GlobalMaterialLocalizations.delegate,
+        GlobalWidgetsLocalizations.delegate,
+        GlobalCupertinoLocalizations.delegate,
+      ],
+      supportedLocales: [
+        const Locale('en'), // English
+        const Locale('es'), // Spanish
+        const Locale('he'), // Hebrew
+        const Locale.fromSubtags(
+            languageCode: 'zh'), // Chinese *See Advanced Locales below*
+      ],
       title: 'Components App',
       // home: HomePage(),
       initialRoute: 'home',
