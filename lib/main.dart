@@ -16,8 +16,9 @@ class MyApp extends StatelessWidget {
       routes: getApplicationRoutes(),
       onGenerateRoute: (RouteSettings settings) {
         print('Se llamo a la ruta ${settings.name}');
-        final route = MaterialPageRoute(builder: (context) => ErrorPage());
-        Navigator.push(context, route);
+        return MaterialPageRoute(builder: (context) => ErrorPage());
+        // Navigator.push(context, route);
+        // return MaterialPageRoute()
       },
     );
   }

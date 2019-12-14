@@ -5,7 +5,8 @@ class ErrorPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Error page"),
+        title: Text("Error"),
+        backgroundColor: Colors.redAccent,
       ),
       body: Center(
         child: Text("Pagina no encontrada"),
