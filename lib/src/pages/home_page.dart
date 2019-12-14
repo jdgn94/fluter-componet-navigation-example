@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 
 import 'package:componets/src/providers/menu_provider.dart';
 import 'package:componets/src/utils/icons_string_util.dart';
-import 'package:componets/src/pages/alert_page.dart';
 
 class HomePage extends StatelessWidget {
   @override
