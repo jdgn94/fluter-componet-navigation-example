@@ -19,9 +19,6 @@ class MyApp extends StatelessWidget {
       supportedLocales: [
         const Locale('en'), // English
         const Locale('es'), // Spanish
-        const Locale('he'), // Hebrew
-        const Locale.fromSubtags(
-            languageCode: 'zh'), // Chinese *See Advanced Locales below*
       ],
       title: 'Components App',
       // home: HomePage(),
