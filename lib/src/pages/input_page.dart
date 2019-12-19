@@ -147,7 +147,7 @@ class _InputPageState extends State<InputPage> {
     _superPowers.forEach((superPower) => {
           listItems.add(DropdownMenuItem(
             child: Text(superPower),
-            value: superPower,
+            value: superPower
           ))
         });
     return listItems;

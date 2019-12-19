@@ -35,7 +35,7 @@ class _SliderPageState extends State<SliderPage> {
       value: _imageSize,
       min: 0.0,
       max: 400.0,
-      // divisions: 20.0, // Se usa para poner la lineas guias en el slider segun la cantidad de espacio que uno decee
+      // divisions: 20, // Se usa para poner la lineas guias en el slider segun la cantidad de espacio que uno decee, el label sale solo con esta opcion
       onChanged: _blockSlider
           ? null
           : (value) {
@@ -82,7 +82,7 @@ class _SliderPageState extends State<SliderPage> {
   Widget _createImage() {
     return FadeInImage(
       image: NetworkImage(
-          'https://toppng.com/public/uploads/preview/batman-png-11553978519t7bp8hvw4p.png'),
+          'http://www.pngall.com/wp-content/uploads/4/Justice-League-PNG.png'),
       placeholder: AssetImage('assets/jar-loading.gif'),
       fadeInDuration: Duration(milliseconds: 200),
       width: _imageSize,
